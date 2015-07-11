@@ -8,6 +8,7 @@ require! {
     'prelude-ls': {fold}
     './util': {name-from-path, strip-string}
     'source-map': {SourceNode, SourceMapGenerator}
+    loophole: {Function}
 }
 
 sn = (node = {}, ...parts) ->

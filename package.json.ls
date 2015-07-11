@@ -1,25 +1,15 @@
-name: 'livescript'
-version: '1.4.0'
+name: 'atom-livescript'
+version: '0.0.1'
 
-description: 'LiveScript is a language which compiles to JavaScript. It has a straightforward mapping to JavaScript and allows you to write expressive code devoid of repetitive boilerplate. While LiveScript adds many features to assist in functional style programming, it also has many improvements for object oriented and imperative programming.'
+description: 'LiveScript for Atom'
 
-keywords:
-  'language'
-  'compiler'
-  'coffeescript'
-  'coco'
-  'javascript'
-  'functional'
-
-author: 'George Zahariev <z@georgezahariev.com>'
-homepage: 'http://livescript.net'
-bugs: 'https://github.com/gkz/LiveScript/issues'
-licenses:
-  type: 'MIT', url: 'https://raw.githubusercontent.com/gkz/LiveScript/master/LICENSE'
-  ...
+author: 'jigsaw (http://jgs.me)'
+homepage: 'https://github.com/e-jigsaw/LiveScript'
+bugs: 'https://github.com/e-jigsaw/LiveScript/issues'
+licenses: 'MIT'
 
 engines:
-  node: '>= 0.8.0'
+  atom: '>= 1.0.0'
 directories:
   lib: './lib'
   bin: './bin'
@@ -30,8 +20,6 @@ files:
   'LICENSE'
 
 main: './lib/'
-bin:
-  lsc: './bin/lsc'
 
 scripts:
   pretest: 'make force && make force'
@@ -43,12 +31,13 @@ prefer-global: true
 
 repository:
   type: 'git'
-  url: 'git://github.com/gkz/LiveScript.git'
+  url: 'git://github.com/e-jigsaw/LiveScript.git'
 
 dependencies:
   'prelude-ls': '~1.1.1'
   optionator: '~0.6.0'
   'source-map': '^0.3.0'
+  loophole: '^1.0.0'
 
 dev-dependencies:
   jison: '0.4.15'
